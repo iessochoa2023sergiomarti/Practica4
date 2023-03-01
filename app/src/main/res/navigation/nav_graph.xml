@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_HiFragment"
+            app:destination="@id/hiFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -25,4 +28,9 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/hiFragment"
+        android:name="net.iessochoa.sergiomarti.p4ejemplo1.HiFragment"
+        android:label="fragment_hi"
+        tools:layout="@layout/fragment_hi" />
 </navigation>

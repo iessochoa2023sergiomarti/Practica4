@@ -35,6 +35,11 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+        // Llamada a HiFragment
+        binding.btHi.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_HiFragment)
+        }
+
     }
 
     override fun onDestroyView() {
