@@ -37,5 +37,22 @@
             android:name="nombre"
             app:argType="string"
             android:defaultValue="Pepe" />
+        <action
+            android:id="@+id/action_hiFragment_to_cambiaNombreFragment"
+            app:destination="@id/cambiaNombreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cambiaNombreFragment"
+        android:name="net.iessochoa.sergiomarti.p4ejemplo1.CambiaNombreFragment"
+        android:label="fragment_cambia_nombre"
+        tools:layout="@layout/fragment_cambia_nombre" >
+        <action
+            android:id="@+id/action_cambiaNombreFragment_to_hiFragment"
+            app:destination="@id/hiFragment"
+            app:popUpTo="@id/hiFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="nombre"
+            app:argType="string" />
     </fragment>
 </navigation>

@@ -2,33 +2,32 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout"
-    android:layout_width="match_parent"
+    android:id="@+id/frameLayout2"
+    tools:context=".CambiaNombreFragment"
     android:layout_height="match_parent"
-    tools:context=".HiFragment">
+    android:layout_width="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:id="@+id/tvHi"
+    <EditText
+        android:id="@+id/etCambiaNombre"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
-        android:text="@string/hello_blank_fragment"
-        android:textSize="24sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nuevo_nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btHi"
+        android:id="@+id/btCambiaNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/cambia_nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHi" />
+        app:layout_constraintTop_toBottomOf="@+id/etCambiaNombre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
