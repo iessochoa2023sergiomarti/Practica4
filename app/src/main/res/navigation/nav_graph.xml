@@ -32,5 +32,10 @@
         android:id="@+id/hiFragment"
         android:name="net.iessochoa.sergiomarti.p4ejemplo1.HiFragment"
         android:label="fragment_hi"
-        tools:layout="@layout/fragment_hi" />
+        tools:layout="@layout/fragment_hi" >
+        <argument
+            android:name="nombre"
+            app:argType="string"
+            android:defaultValue="Pepe" />
+    </fragment>
 </navigation>

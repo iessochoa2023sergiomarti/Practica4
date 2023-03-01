@@ -37,7 +37,13 @@ class FirstFragment : Fragment() {
         }
         // Llamada a HiFragment
         binding.btHi.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_HiFragment)
+ //           findNavController().navigate(R.id.action_FirstFragment_to_HiFragment)
+            // Buscamos el nombre
+            val nombre = binding.etPersonName.text.toString()
+            // Creamos la acción pasándole el valor como argumento
+            val action = FirstFragmentDirections.actionFirstFragmentToHiFragment(nombre)
+            // Abrimos HiFragment
+            findNavController().navigate(action)
         }
 
     }
